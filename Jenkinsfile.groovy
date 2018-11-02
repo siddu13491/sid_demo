@@ -1,1 +1,3 @@
-echo 'This is test run'
+#!/usr/bin/env groovy
+
+groovy -v
