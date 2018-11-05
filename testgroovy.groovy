@@ -1,11 +1,11 @@
 def numTasks = 0
 
+println("Number of tasks used in all plans: $planManager")
 planManager.allPlans.each { plan ->
   plan.stages.each { stage -> 
     stage.jobs.each { job -> 
-      numTasks += job.taskDefinitions.count { task ->
-        task.pluginKey.startsWith('com.company.task.id')
-      }
+      numTasks++
+        println("Number of tasks used in all plans: $numTasks")
     }  
   }
 }
